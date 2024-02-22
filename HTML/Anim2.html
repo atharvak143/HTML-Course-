@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anmation2</title>
+    <style>
+        .main{
+            width: 1000px;
+            height:300px;
+            border: 2px solid black;
+            position: absolute;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background: red;
+            
+            position: relative;
+            animation-name: box;
+            animation-duration: 5s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes box{
+            from{
+                left: 0px;
+                top: 0px;
+            }
+            to{
+                left: 800px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

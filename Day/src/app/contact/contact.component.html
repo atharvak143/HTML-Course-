@@ -1,0 +1,21 @@
+<h1>Contact Page</h1>
+<!-- <div>
+    <input type="text" #txtname (keyup)='0'>
+</div> -->
+<!-- <div [ngSwitch]="txtname.value">
+    <p *ngSwitchCase="'Monday'">It's Monday!, its time to Wake up </p>
+    <p *ngSwitchCase="'Tuesday'">It's Tuesday! Its time to Run  up</p>
+    <p *ngSwitchCase="'Wednesday'">It's Wednesday!, its Time to ate Chikan</p>
+    <p *ngSwitchDefault>It's some other day!</p>
+    <div *ngFor="let item of[2,3,4,5,600,9,68,500,2,41,22222222222]">
+        <p>Current Element of array is :{{item}}</p>
+
+    </div>
+</div> -->
+    <div>Today Date is {{today | date}}</div>
+    <div>The Time is {{today | date : 'h:mm a z'}}</div>
+    <div>The Time is {{today | date :'dd//mm/yy'}}</div>
+    <div>Long Date {{today | date:'longDate'}}</div>
+    <div>Short Date {{today | date:'shortDate'}}</div>
+    <div>Full Date {{today | date:'fullDate'}}</div>
+

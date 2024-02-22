@@ -1,0 +1,38 @@
+
+<!-- <h1 align="center">Suyog Dighe (3rd Y. Information Technology) Sanjivani College of Engineering , Kopargaon</h1> -->
+<!-- <div [ngStyle]="{color:v.available==false?'blue':'red'}">
+    <p>Name :- {{v.name}}</p>
+    <p>Price :- {{v.price}}</p>
+    <p>Status :- {{v.available}}</p>
+    <p> Color :- {{v.color}}</p>
+</div> -->
+<div align="center">
+   <h1>Home Page</h1>
+<table border="1">
+    <tr>
+        <th>Fruit</th>
+        <th>Color</th>
+        <th>Taste</th>
+    </tr>
+    <tr [ngStyle]="{color:v.available==false?'blue':'red'}">
+        <td>Apple</td>
+        <td>Red</td>
+        <td>Sweet</td>
+    </tr>
+    <tr [ngStyle]="{color:v.available==true?'yellow':'red'}">
+        <td>Banana</td>
+        <td>Yellow</td>
+        <td>Sweet</td>
+    </tr>
+    <tr [ngStyle]="{color:v.available==true?'orange':'red'}">
+        <td>Orange</td>
+        <td>Orange</td>
+        <td>Citrusy</td>
+    </tr>
+    <tr [ngStyle]="{color:v.available==true?'green':'red'}">
+        <td>Grapes</td>
+        <td>Purple/Green</td>
+        <td>Sweet</td>
+    </tr>
+</table>
+</div>

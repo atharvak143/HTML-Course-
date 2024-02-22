@@ -1,0 +1,10 @@
+<h1>file works Page</h1>
+<div [ngClass]="{changeBackground:searchValue !=''}">
+    <span>
+        <b>search</b>
+    </span>
+    <input type="text"[(ngModel)]="searchValue">
+    <p>{{searchValue}}</p>
+    <span *ngIf="{changeBackground: searchValue !=''}">You Searched for "{{searchValue}}"</span>
+
+</div>

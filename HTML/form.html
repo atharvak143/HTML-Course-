@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Form Tag and Form Element</h1>
+    <h3>Enquiry</h3>
+
+    <form action="">
+        <fieldset>
+            <legend align="center">Enquiry</legend>
+            Color:
+            <input type="color" value="#FF0000">
+            <br><br>
+        Name: <input type="text" disabled name="Atharva" readonly  placeholder="enter your name" autofocus required/>
+        <br>
+        <!-- Cannot be sent to url using disabled -->
+        <!-- read only can be only read -->
+        <br>
+        Address: <textarea name="Address" value="Atharva" id="" cols="" rows="" maxlength="20"></textarea>
+        <br>
+        <br>
+        Gender: <input type="radio" value="M" name="gender"> Male
+        <input type="radio" value="F" name="gender" checked> Female
+        <input type="radio" value="O" name="gender"> Other
+
+        <br><br>
+        Country
+        <select name="" id="">
+            <option value="">Select Country</option>
+            <optgroup label="Asia">
+            <option value="">India</option>
+            <option value="">SriLanka</option>
+            <option value="">Bangladesh</option>
+        </optgroup>
+            <option value="">USA</option>
+        </select>
+
+        <br><br>
+        Hobbies:
+        <input type="checkbox" name="hobbies[]" checked> Dancing
+        <input type="checkbox" name="hobbies[]"> Singing
+        <br><br>
+        Image:
+        <input type="file" name="Image">
+        <br><br>
+        Age:
+        <input type="number" min="10" max="50"  >
+        <br><br>
+        Mobile Number:
+        <input type="number" min="0" max="9999999999">
+        <br><br>
+        <input type="submit" value="send">
+        <br><br>
+        <input type="reset">
+
+    </fieldset>
+    </form>
+</body>
+</html>
